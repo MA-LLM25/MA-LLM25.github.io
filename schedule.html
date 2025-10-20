@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Schedule - ACM MM 2025 Workshop</title>
+  <title>MA-LLM25 - Schedule</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
@@ -20,35 +20,113 @@
       margin: auto;
       padding: 20px;
     }
-    h1, h2 {
+    h1 {
       text-align: center;
       font-size: 32px;
       color: #333;
-    }
-    h2 {
-      font-size: 26px;
-      margin-top: 30px;
     }
     hr {
       margin: 20px auto;
       width: 60%;
       border: 1px solid #ddd;
     }
+    .location-container {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #555;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .location-room {
+        font-weight: bold;
+        color: #333;
+        padding: 5px 10px;
+    }
+    .location-venue {
+        padding: 5px 10px;
+    }
+    .location-container a {
+        color: #555;
+        text-decoration: none;
+    }
+    .location-container a:hover {
+        text-decoration: underline;
+    }
+    .location-container .fas {
+        margin-right: 4px;
+    }
     .schedule-table {
       width: 100%;
       border-collapse: collapse;
       margin: 20px auto;
       text-align: left;
-      font-size: 18px;
+      font-size: 17px; 
+      line-height: 1.5;
     }
     .schedule-table th, .schedule-table td {
-      padding: 12px;
+      padding: 15px; 
       border-bottom: 1px solid #ddd;
+      vertical-align: top; 
     }
     .schedule-table th {
       background: #f9f9f9;
       font-weight: bold;
       text-align: center;
+      width: 20%; 
+    }
+    .session-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        display: block;
+        margin-bottom: 5px;
+        color: #000;
+    }
+    /* --- NEW CSS FOR IN-SESSION LOCATION --- */
+    .session-location {
+        display: block;
+        font-size: 0.95em;
+        color: #666;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .session-location .fas {
+        margin-right: 5px;
+    }
+    /* --- END NEW CSS --- */
+    .talk-title {
+        font-style: italic;
+        display: block;
+        margin-top: 8px;
+    }
+    .speakers {
+        display: block;
+        margin-top: 5px;
+        color: #333;
+    }
+    .duration {
+        display: block;
+        margin-top: 8px;
+        font-size: 0.9em;
+        color: #777;
+    }
+    .panel-list {
+        margin-top: 10px;
+    }
+    .panel-list ul {
+        margin-top: 5px;
+        padding-left: 25px;
+    }
+    .event-details {
+        margin-bottom: 15px;
+    }
+    .invited {
+        font-weight: bold;
+        color: #d9534f; 
+        font-size: 0.9em;
     }
   </style>
 </head>
@@ -57,65 +135,103 @@
   <div class="menu-container"></div>
   <div class="content-container">
     <div class="content">
-      <h1>Workshop Schedule</h1>
+      <h1>Workshop8 MA-LLM25 Program</h1>
+
+      <div class="location-container">
+        <span class="location-room">
+          <i class="fas fa-door-open"></i> Room: Weavers
+        </span>
+        <span class="location-venue">
+          <i class="fas fa-map-marker-alt"></i> 
+          <a href="https://www.google.com/maps/search/?api=1&query=Hyatt+Centric+The+Liberties+Dublin" target="_blank" rel="noopener noreferrer">
+            Hyatt Centric Liberties, Dublin
+          </a>
+        </span>
+      </div>
+      
       <hr>
       <table class="schedule-table">
         <tr>
           <th>Time</th>
           <th>Event</th>
         </tr>
+        
         <tr>
-          <td>09:00 - 09:05</td>
-          <td>Opening and Welcome</td>
+          <td>13:30 - 13:35</td>
+          <td>
+            <strong class="session-title">Opening and Welcome</strong>
+            <span class="session-location"><i class="fas fa-door-open"></i> Room: Weavers</span>
+            
+          </td>
         </tr>
+        
         <tr>
-          <td>09:05 - 10:00</td>
-          <td>Keynote 1</td>
+          <td>13:35 - 14:15</td>
+          <td>
+            <strong class="session-title">Keynote Session</strong>
+            <span class="session-location"><i class="fas fa-door-open"></i> Room: Weavers</span>
+            <span class="speakers">Hyowon Lee</span>
+            <em class="talk-title">Supporting User’s Cognitive Ability as the Key Agenda in Multimodal LLM/GenAI R&D</em>
+            
+          </td>
         </tr>
+        
         <tr>
-          <td>10:00 - 10:30</td>
-          <td>Oral Session 1</td>
+          <td>14:15 - 15:00</td>
+          <td>
+            <strong class="session-title">Oral Session</strong>
+            <span class="session-location"><i class="fas fa-door-open"></i> Room: Weavers</span>
+            <div class="event-details">
+              <span class="speakers">Nathalie Tiet, Fábio Rezende de Souza, Pierre Nugues</span>
+              <em class="talk-title">Aspects of Image Captioning Across Multimodal Large Language Models</em>
+              
+            </div>
+            <div class="event-details">
+              <span class="invited">(Invited paper)</span>
+              <span class="speakers">Shahroz Tariq, Simon Woo, Priyanka Singh, Irena Irmalasari, Saakshi Gupta, Dev Gupta.</span>
+              <em class="talk-title">From Prediction to Explanation: Multimodal, Explainable, and Interactive Deepfake Detection Framework for Non-Expert Users</em>
+              
+            </div>
+          </td>
         </tr>
+        
         <tr>
-          <td>10:30 - 11:00</td>
-          <td>Coffee Break</td>
+          <td>15:00 - 15:30</td>
+          <td>
+            <strong class="session-title">Coffee Break</strong>
+          </td>
         </tr>
+        
         <tr>
-          <td>11:00 - 11:45</td>
-          <td>Keynote 2</td>
+          <td>15:30 - 16:10</td>
+          <td>
+            <strong class="session-title">Keynote Session</strong>
+            <span class="session-location"><i class="fas fa-door-open"></i> Room: Weavers</span>
+            <span class="speakers">Stevan Rudinac</span>
+            <em class="talk-title">From Content-Based Image and Video Retrieval With Relevance Feedback to Multimodal Large Language Models and Beyond: A Journey Through Modalities and Semantic Levels</em>
+            
+          </td>
         </tr>
+        
         <tr>
-          <td>11:45 - 12:30</td>
-          <td>Oral Session 2</td>
+          <td>16:10 - 17:00</td>
+          <td>
+            <strong class="session-title">Panel + Plenary discussion on Future Directions</strong>
+            <span class="session-location"><i class="fas fa-door-open"></i> Room: Weavers</span>
+            
+            <div class="panel-list">
+              <p><strong>Moderator:</strong> Marcel Worring (University of Amsterdam)</p>
+              <p><strong>Panelists:</strong></p>
+              <ul>
+                <li>Hywon Lee (Dublin City University)</li>
+                <li>Stevan Rudinac (University of Amsterdam)</li>
+                <li>Shin’ichi Satoh (National Institute of Informatics Tokyo)</li>
+                <li>Laura Toni (University College London)</li>
+              </ul>
+            </div>
+          </td>
         </tr>
-        <tr>
-          <td>12:30 - 14:00</td>
-          <td>Lunch Break</td>
-        </tr>
-        <tr>
-          <td>14:00 - 14:50</td>
-          <td>Keynote 3</td>
-        </tr>
-        <tr>
-          <td>14:50 - 15:30</td>
-          <td>Oral Session 3</td>
-        </tr>
-        <tr>
-          <td>15:30 - 16:00</td>
-          <td>Coffee Break</td>
-        </tr>
-        <tr>
-          <td>16:00 - 16:30</td>
-          <td>Oral Session 4: Position Papers</td>
-        </tr>
-        <tr>
-          <td>16:30 - 17:20</td>
-          <td>Plenary Discussion on Future Directions</td>
-        </tr>
-        <tr>
-          <td>17:20 - 17:30</td>
-          <td>Closing Remarks</td>
-        </tr>
+        
       </table>
     </div>
   </div>
